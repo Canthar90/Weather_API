@@ -4,11 +4,14 @@
 Weather data API
 {% endblock %}
 
-{% block content %}
+{% block body %}
         <h1>Weather data API </h1>
         <p>URL format: http://127.0.0.1:5000/api/v1/station/YYYY-MM-DD</p>
         <p>URL Example: http:127.0.0.1:5000/api/v1/10/1988-10-25</p>
- 
-
+        
+        <div>
+                <p>{{data|safe}}</p>
+        </div>       
+       
 
 {% endblock %}
