@@ -6,9 +6,15 @@ Weather data API
 
 {% block body %}
         <h1>Weather data API </h1>
+        <p>Endpoint for one station one temperature at given date</p>
         <p>URL format: http://127.0.0.1:5000/api/v1/station/YYYY-MM-DD</p>
         <p>URL Example: http:127.0.0.1:5000/api/v1/10/1988-10-25</p>
-        
+        <p>Endpoint for all chistorical temperature data</p>
+        <p>URL format: http://127.0.0.1:5000/api/v1/station</p>
+        <p>URL Example: http:127.0.0.1:5000/api/v1/10 </p>
+        <p>Endpoint for all chistorical temperature data from given year</p>
+        <p>URL format: http://127.0.0.1:5000/api/v1/yearly/station/year</p>
+        <p>URL Example: http:127.0.0.1:5000/api/v1/yearly/10/1995 </p>
         <div>
                 <p>{{data|safe}}</p>
         </div>       
